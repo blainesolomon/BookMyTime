@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460402C290143000AC848 /* BookMyTimeApp.swift */; };
+		BCD460432C290143000AC848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460422C290143000AC848 /* ContentView.swift */; };
+		BCD460452C290144000AC848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD460442C290144000AC848 /* Assets.xcassets */; };
+		BCD460482C290144000AC848 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD460472C290144000AC848 /* Preview Assets.xcassets */; };
+		BCD460522C290144000AC848 /* BookMyTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460512C290144000AC848 /* BookMyTimeTests.swift */; };
+		BCD4605C2C290145000AC848 /* BookMyTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4605B2C290145000AC848 /* BookMyTimeUITests.swift */; };
+		BCD4605E2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCD4604E2C290144000AC848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD460352C290143000AC848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD4603C2C290143000AC848;
+			remoteInfo = BookMyTime;
+		};
+		BCD460582C290145000AC848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD460352C290143000AC848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD4603C2C290143000AC848;
+			remoteInfo = BookMyTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCD4603D2C290143000AC848 /* BookMyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD460402C290143000AC848 /* BookMyTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeApp.swift; sourceTree = "<group>"; };
+		BCD460422C290143000AC848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCD460442C290144000AC848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCD460472C290144000AC848 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCD4604D2C290144000AC848 /* BookMyTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookMyTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD460512C290144000AC848 /* BookMyTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeTests.swift; sourceTree = "<group>"; };
+		BCD460572C290145000AC848 /* BookMyTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookMyTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD4605B2C290145000AC848 /* BookMyTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeUITests.swift; sourceTree = "<group>"; };
+		BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCD4603A2C290143000AC848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD4604A2C290144000AC848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD460542C290145000AC848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCD460342C290143000AC848 = {
+			isa = PBXGroup;
+			children = (
+				BCD4603F2C290143000AC848 /* BookMyTime */,
+				BCD460502C290144000AC848 /* BookMyTimeTests */,
+				BCD4605A2C290145000AC848 /* BookMyTimeUITests */,
+				BCD4603E2C290143000AC848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCD4603E2C290143000AC848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4603D2C290143000AC848 /* BookMyTime.app */,
+				BCD4604D2C290144000AC848 /* BookMyTimeTests.xctest */,
+				BCD460572C290145000AC848 /* BookMyTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD4603F2C290143000AC848 /* BookMyTime */ = {
+			isa = PBXGroup;
+			children = (
+				BCD460402C290143000AC848 /* BookMyTimeApp.swift */,
+				BCD460422C290143000AC848 /* ContentView.swift */,
+				BCD460442C290144000AC848 /* Assets.xcassets */,
+				BCD460462C290144000AC848 /* Preview Content */,
+			);
+			path = BookMyTime;
+			sourceTree = "<group>";
+		};
+		BCD460462C290144000AC848 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCD460472C290144000AC848 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCD460502C290144000AC848 /* BookMyTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCD460512C290144000AC848 /* BookMyTimeTests.swift */,
+			);
+			path = BookMyTimeTests;
+			sourceTree = "<group>";
+		};
+		BCD4605A2C290145000AC848 /* BookMyTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4605B2C290145000AC848 /* BookMyTimeUITests.swift */,
+				BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */,
+			);
+			path = BookMyTimeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCD4603C2C290143000AC848 /* BookMyTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD460612C290145000AC848 /* Build configuration list for PBXNativeTarget "BookMyTime" */;
+			buildPhases = (
+				BCD460392C290143000AC848 /* Sources */,
+				BCD4603A2C290143000AC848 /* Frameworks */,
+				BCD4603B2C290143000AC848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookMyTime;
+			productName = BookMyTime;
+			productReference = BCD4603D2C290143000AC848 /* BookMyTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCD4604C2C290144000AC848 /* BookMyTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD460642C290145000AC848 /* Build configuration list for PBXNativeTarget "BookMyTimeTests" */;
+			buildPhases = (
+				BCD460492C290144000AC848 /* Sources */,
+				BCD4604A2C290144000AC848 /* Frameworks */,
+				BCD4604B2C290144000AC848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCD4604F2C290144000AC848 /* PBXTargetDependency */,
+			);
+			name = BookMyTimeTests;
+			productName = BookMyTimeTests;
+			productReference = BCD4604D2C290144000AC848 /* BookMyTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCD460562C290145000AC848 /* BookMyTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD460672C290145000AC848 /* Build configuration list for PBXNativeTarget "BookMyTimeUITests" */;
+			buildPhases = (
+				BCD460532C290145000AC848 /* Sources */,
+				BCD460542C290145000AC848 /* Frameworks */,
+				BCD460552C290145000AC848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCD460592C290145000AC848 /* PBXTargetDependency */,
+			);
+			name = BookMyTimeUITests;
+			productName = BookMyTimeUITests;
+			productReference = BCD460572C290145000AC848 /* BookMyTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD460352C290143000AC848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BCD4603C2C290143000AC848 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BCD4604C2C290144000AC848 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BCD4603C2C290143000AC848;
+					};
+					BCD460562C290145000AC848 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BCD4603C2C290143000AC848;
+					};
+				};
+			};
+			buildConfigurationList = BCD460382C290143000AC848 /* Build configuration list for PBXProject "BookMyTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCD460342C290143000AC848;
+			productRefGroup = BCD4603E2C290143000AC848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCD4603C2C290143000AC848 /* BookMyTime */,
+				BCD4604C2C290144000AC848 /* BookMyTimeTests */,
+				BCD460562C290145000AC848 /* BookMyTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCD4603B2C290143000AC848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD460482C290144000AC848 /* Preview Assets.xcassets in Resources */,
+				BCD460452C290144000AC848 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD4604B2C290144000AC848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD460552C290145000AC848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCD460392C290143000AC848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD460432C290143000AC848 /* ContentView.swift in Sources */,
+				BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD460492C290144000AC848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD460522C290144000AC848 /* BookMyTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD460532C290145000AC848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD4605E2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift in Sources */,
+				BCD4605C2C290145000AC848 /* BookMyTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCD4604F2C290144000AC848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD4603C2C290143000AC848 /* BookMyTime */;
+			targetProxy = BCD4604E2C290144000AC848 /* PBXContainerItemProxy */;
+		};
+		BCD460592C290145000AC848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD4603C2C290143000AC848 /* BookMyTime */;
+			targetProxy = BCD460582C290145000AC848 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCD4605F2C290145000AC848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCD460602C290145000AC848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCD460622C290145000AC848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BookMyTime/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.BookMyTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCD460632C290145000AC848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BookMyTime/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.BookMyTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCD460652C290145000AC848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.BookMyTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookMyTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookMyTime";
+			};
+			name = Debug;
+		};
+		BCD460662C290145000AC848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.BookMyTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookMyTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookMyTime";
+			};
+			name = Release;
+		};
+		BCD460682C290145000AC848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.BookMyTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BookMyTime;
+			};
+			name = Debug;
+		};
+		BCD460692C290145000AC848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.BookMyTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BookMyTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCD460382C290143000AC848 /* Build configuration list for PBXProject "BookMyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD4605F2C290145000AC848 /* Debug */,
+				BCD460602C290145000AC848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD460612C290145000AC848 /* Build configuration list for PBXNativeTarget "BookMyTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD460622C290145000AC848 /* Debug */,
+				BCD460632C290145000AC848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD460642C290145000AC848 /* Build configuration list for PBXNativeTarget "BookMyTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD460652C290145000AC848 /* Debug */,
+				BCD460662C290145000AC848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD460672C290145000AC848 /* Build configuration list for PBXNativeTarget "BookMyTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD460682C290145000AC848 /* Debug */,
+				BCD460692C290145000AC848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD460352C290143000AC848 /* Project object */;
+}
