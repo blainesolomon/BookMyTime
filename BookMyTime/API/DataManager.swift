@@ -29,7 +29,7 @@ import Foundation
     }
 
     func fetchAvailability() {
-        availability = [.alexJuly1Demo, .alexJuly2Demo]
+        availability = [.alexJuly1Demo, .alexJuly2Demo].sorted()
     }
 
     func fetchReservations(provider: Provider) -> [Reservation] {
@@ -49,7 +49,8 @@ import Foundation
     }
 
     func addAvailability(availability: Availability) {
-
+        self.availability.append(availability)
+        self.availability.sort()
     }
 
 }

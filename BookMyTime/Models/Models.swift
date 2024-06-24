@@ -62,6 +62,15 @@ import Observation
     }
 }
 
+extension Availability: Comparable {
+    static func < (lhs: Availability, rhs: Availability) -> Bool {
+        if lhs.startDate == rhs.startDate {
+            return lhs.endDate < rhs.endDate
+        }
+        return lhs.startDate < rhs.startDate
+    }
+}
+
 extension Availability: Equatable {
     static func == (lhs: Availability, rhs: Availability) -> Bool {
         lhs.id == rhs.id
