@@ -46,6 +46,15 @@ extension Reservation {
                                                   isConfirmed: false,
                                                   creationDate: .now,
                                                   startDate: .makeDate(month: 7, day: 1, hour: 9))
+
+    static let frodoConfirmedReservation = Reservation(id: .init(),
+                                                       clientID: .frodoID,
+                                                       clientName: "Frodo",
+                                                       providerID: .alexID,
+                                                       providerName: "Alex",
+                                                       isConfirmed: true,
+                                                       creationDate: .now,
+                                                       startDate: .makeDate(month: 7, day: 1, hour: 9))
 }
 
 

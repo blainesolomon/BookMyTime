@@ -42,7 +42,9 @@ import Foundation
     }
 
     func confirmReservation(reservation: Reservation) {
-
+        if let index = reservations.firstIndex(where: { $0.id == reservation.id }) {
+            reservations[index].isConfirmed = true
+        }
     }
 
     func addAvailability(availability: Availability) {

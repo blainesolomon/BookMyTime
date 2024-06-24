@@ -18,17 +18,18 @@ struct ClientDetailView: View {
     var body: some View {
         ZStack {
             List {
-                Section("Reservations") {
+                Section {
                     ForEach(reservations) { reservation in
-                        VStack {
-                            Text(reservation.startDate.formatted(date: .long, time: .shortened))
-                            Text("Reservation with \(reservation.providerName)")
-                        }
+                        ReservationRowView(reservation: reservation)
                     }
 
                     Button("Make Reservation") {
                         showingMakeReservation = true
                     }
+                } header: {
+                    Text("Reservations")
+                } footer: {
+                    Text("Tap to confirm a reservation")
                 }
             }
         }
