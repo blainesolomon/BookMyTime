@@ -21,16 +21,27 @@ extension Client {
 
 extension UUID {
     static let alexID = UUID(uuidString: "D5B90964-D7BC-480D-BEAA-7284396B374B")!
+    static let frodoID = UUID(uuidString: "2EA11893-44A8-4670-94FA-FA8BDBDDBD2C")!
+
 }
 
 extension TimeSlot {
-    static let july1 = TimeSlot(id: .init(),
+    static let july1DemoSlot = TimeSlot(id: .init(),
                                 startDate: .makeDate(month: 7, day: 1, hour: 9),
                                 providerID: .alexID)
 
-    static let july2 = TimeSlot(id: .init(),
+    static let july2DemoSlot = TimeSlot(id: .init(),
                                 startDate: .makeDate(month: 7, day: 2, hour: 9),
                                 providerID: .alexID)
+}
+
+extension Reservation {
+    static let frodoDemoReservation = Reservation(id: .init(), 
+                                                  clientID: .frodoID,
+                                                  providerID: .alexID, 
+                                                  isConfirmed: false,
+                                                  creationDate: .now,
+                                                  startDate: .makeDate(month: 7, day: 1, hour: 9))
 }
 
 

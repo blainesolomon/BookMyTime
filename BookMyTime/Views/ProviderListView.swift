@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ProviderListView: View {
-    @State private var providers = [Provider.alex, .leo, .milo]
+    @Environment(DataManager.self) private var dataManager
 
     var body: some View {
         NavigationStack {
             List {
-                ForEach(providers) {
+                ForEach(dataManager.providers) {
                     Text($0.name)
                 }
             }
@@ -24,4 +24,5 @@ struct ProviderListView: View {
 
 #Preview {
     ProviderListView()
+        .environment(DataManager())
 }

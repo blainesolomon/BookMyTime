@@ -33,18 +33,18 @@ import Observation
     var clientID: UUID
     var providerID: UUID
     var isConfirmed: Bool
-    var creationDate: Bool
+    var creationDate: Date
     var startDate: Date
     var endDate: Date
 
-    init(id: UUID, clientID: UUID, providerID: UUID, isConfirmed: Bool, creationDate: Bool, startDate: Date, endDate: Date) {
+    init(id: UUID, clientID: UUID, providerID: UUID, isConfirmed: Bool, creationDate: Date, startDate: Date) {
         self.id = id
         self.clientID = clientID
         self.providerID = providerID
         self.isConfirmed = isConfirmed
         self.creationDate = creationDate
         self.startDate = startDate
-        self.endDate = endDate
+        self.endDate = startDate.addingTimeInterval(.fifteenMin)
     }
 }
 

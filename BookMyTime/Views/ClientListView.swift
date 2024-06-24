@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ClientListView: View {
-    @State private var clients = [Client.frodo, .sam, .gandalf]
+    @Environment(DataManager.self) private var dataManager
 
     var body: some View {
         NavigationStack {
             List {
-                ForEach(clients) {
+                ForEach(dataManager.clients) {
                     Text($0.name)
                 }
             }
@@ -24,4 +24,5 @@ struct ClientListView: View {
 
 #Preview {
     ClientListView()
+        .environment(DataManager())
 }
