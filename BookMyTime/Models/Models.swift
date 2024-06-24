@@ -48,16 +48,22 @@ import Observation
     }
 }
 
-@Observable final class TimeSlot: Identifiable {
+@Observable final class Availability: Identifiable {
     var id: UUID
     var startDate: Date
     var endDate: Date
     var providerID: UUID
 
-    init(id: UUID, startDate: Date, providerID: UUID) {
+    init(id: UUID = UUID(), startDate: Date, endDate: Date, providerID: UUID) {
         self.id = id
         self.startDate = startDate
-        self.endDate = startDate.addingTimeInterval(.fifteenMin)
+        self.endDate = endDate
         self.providerID = providerID
+    }
+}
+
+extension Availability: Equatable {
+    static func == (lhs: Availability, rhs: Availability) -> Bool {
+        lhs.id == rhs.id
     }
 }

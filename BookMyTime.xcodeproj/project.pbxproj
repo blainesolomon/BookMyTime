@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BC9FC9A82C2918B500F09D6C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9FC9A72C2918B500F09D6C /* DateHelper.swift */; };
+		BC9FC9AB2C291FE900F09D6C /* ProviderScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9FC9AA2C291FE900F09D6C /* ProviderScheduleView.swift */; };
+		BC9FC9AD2C29203E00F09D6C /* ProviderAddAvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9FC9AC2C29203E00F09D6C /* ProviderAddAvailabilityView.swift */; };
 		BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460402C290143000AC848 /* BookMyTimeApp.swift */; };
 		BCD460432C290143000AC848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460422C290143000AC848 /* ContentView.swift */; };
 		BCD460452C290144000AC848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD460442C290144000AC848 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		BC9FC9A52C29175800F09D6C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BC9FC9A72C2918B500F09D6C /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		BC9FC9AA2C291FE900F09D6C /* ProviderScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderScheduleView.swift; sourceTree = "<group>"; };
+		BC9FC9AC2C29203E00F09D6C /* ProviderAddAvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderAddAvailabilityView.swift; sourceTree = "<group>"; };
 		BCD4603D2C290143000AC848 /* BookMyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD460402C290143000AC848 /* BookMyTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeApp.swift; sourceTree = "<group>"; };
 		BCD460422C290143000AC848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			children = (
 				BCD460422C290143000AC848 /* ContentView.swift */,
 				BCD460722C290A11000AC848 /* ProviderListView.swift */,
+				BC9FC9AA2C291FE900F09D6C /* ProviderScheduleView.swift */,
+				BC9FC9AC2C29203E00F09D6C /* ProviderAddAvailabilityView.swift */,
 				BCD460762C290AE3000AC848 /* ClientListView.swift */,
 			);
 			path = Views;
@@ -311,11 +317,13 @@
 			files = (
 				BCD4606F2C29073C000AC848 /* DataManager.swift in Sources */,
 				BC9FC9A82C2918B500F09D6C /* DateHelper.swift in Sources */,
+				BC9FC9AD2C29203E00F09D6C /* ProviderAddAvailabilityView.swift in Sources */,
 				BCD460772C290AE3000AC848 /* ClientListView.swift in Sources */,
 				BCD460432C290143000AC848 /* ContentView.swift in Sources */,
 				BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */,
 				BCD4606C2C290263000AC848 /* Models.swift in Sources */,
 				BCD460712C2909BD000AC848 /* MockData.swift in Sources */,
+				BC9FC9AB2C291FE900F09D6C /* ProviderScheduleView.swift in Sources */,
 				BCD460732C290A11000AC848 /* ProviderListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

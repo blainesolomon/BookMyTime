@@ -25,18 +25,20 @@ extension UUID {
 
 }
 
-extension TimeSlot {
-    static let july1DemoSlot = TimeSlot(id: .init(),
-                                startDate: .makeDate(month: 7, day: 1, hour: 9),
-                                providerID: .alexID)
+extension Availability {
+    static let alexJuly1Demo = Availability(id: .init(),
+                                            startDate: .makeDate(month: 7, day: 1, hour: 8),
+                                            endDate: .makeDate(month: 7, day: 1, hour: 15),
+                                            providerID: .alexID)
 
-    static let july2DemoSlot = TimeSlot(id: .init(),
-                                startDate: .makeDate(month: 7, day: 2, hour: 9),
-                                providerID: .alexID)
+    static let alexJuly2Demo = Availability(id: .init(),
+                                            startDate: .makeDate(month: 7, day: 2, hour: 9),
+                                            endDate: .makeDate(month: 7, day: 2, hour: 16),
+                                            providerID: .alexID)
 }
 
 extension Reservation {
-    static let frodoDemoReservation = Reservation(id: .init(), 
+    static let frodoDemoReservation = Reservation(id: .init(),
                                                   clientID: .frodoID,
                                                   providerID: .alexID, 
                                                   isConfirmed: false,

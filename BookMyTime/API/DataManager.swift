@@ -12,11 +12,12 @@ import Foundation
     private(set) var clients = [Client]()
     private(set) var providers = [Provider]()
     private(set) var reservations = [Reservation]()
-    private(set) var timeSlots = [TimeSlot]()
+    private(set) var availability = [Availability]()
 
     init() {
         fetchClients()
         fetchProviders()
+        fetchAvailability()
     }
 
     func fetchClients() {
@@ -27,8 +28,8 @@ import Foundation
         providers = [.alex, .leo, .milo]
     }
 
-    func fetchSchedule(provider: Provider) {
-        timeSlots = [.july1DemoSlot, .july2DemoSlot]
+    func fetchAvailability() {
+        availability = [.alexJuly1Demo, .alexJuly2Demo]
     }
 
     func fetchReservations(provider: Provider) -> [Reservation] {
@@ -47,7 +48,7 @@ import Foundation
 
     }
 
-    func addTimeSlot(timeSlot: TimeSlot) {
+    func addAvailability(availability: Availability) {
 
     }
 
