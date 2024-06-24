@@ -54,10 +54,10 @@ import Observation
     var endDate: Date
     var providerID: UUID
 
-    init(id: UUID, startDate: Date, endDate: Date, providerID: UUID) {
+    init(id: UUID, startDate: Date, providerID: UUID) {
         self.id = id
         self.startDate = startDate
-        self.endDate = endDate
+        self.endDate = startDate.addingTimeInterval(.fifteenMin)
         self.providerID = providerID
     }
 }

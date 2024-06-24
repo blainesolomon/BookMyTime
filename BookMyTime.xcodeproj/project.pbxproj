@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC9FC9A82C2918B500F09D6C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9FC9A72C2918B500F09D6C /* DateHelper.swift */; };
 		BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460402C290143000AC848 /* BookMyTimeApp.swift */; };
 		BCD460432C290143000AC848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460422C290143000AC848 /* ContentView.swift */; };
 		BCD460452C290144000AC848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD460442C290144000AC848 /* Assets.xcassets */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC9FC9A52C29175800F09D6C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BC9FC9A72C2918B500F09D6C /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		BCD4603D2C290143000AC848 /* BookMyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookMyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD460402C290143000AC848 /* BookMyTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeApp.swift; sourceTree = "<group>"; };
 		BCD460422C290143000AC848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC9FC9A62C2918AB00F09D6C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BC9FC9A72C2918B500F09D6C /* DateHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BCD460342C290143000AC848 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +121,9 @@
 				BCD460752C290AD9000AC848 /* Clients */,
 				BCD4606D2C29072E000AC848 /* API */,
 				BCD4606A2C290224000AC848 /* Models */,
+				BC9FC9A62C2918AB00F09D6C /* Helpers */,
 				BCD460442C290144000AC848 /* Assets.xcassets */,
+				BC9FC9A52C29175800F09D6C /* Playground.playground */,
 				BCD460462C290144000AC848 /* Preview Content */,
 			);
 			path = BookMyTime;
@@ -305,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD4606F2C29073C000AC848 /* MockAPI.swift in Sources */,
+				BC9FC9A82C2918B500F09D6C /* DateHelper.swift in Sources */,
 				BCD460772C290AE3000AC848 /* ClientListView.swift in Sources */,
 				BCD460432C290143000AC848 /* ContentView.swift in Sources */,
 				BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */,
