@@ -14,6 +14,7 @@
 		BCD460522C290144000AC848 /* BookMyTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460512C290144000AC848 /* BookMyTimeTests.swift */; };
 		BCD4605C2C290145000AC848 /* BookMyTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4605B2C290145000AC848 /* BookMyTimeUITests.swift */; };
 		BCD4605E2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */; };
+		BCD4606C2C290263000AC848 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4606B2C290263000AC848 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		BCD460572C290145000AC848 /* BookMyTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookMyTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD4605B2C290145000AC848 /* BookMyTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeUITests.swift; sourceTree = "<group>"; };
 		BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCD4606B2C290263000AC848 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				BCD460402C290143000AC848 /* BookMyTimeApp.swift */,
 				BCD460422C290143000AC848 /* ContentView.swift */,
+				BCD4606A2C290224000AC848 /* Models */,
 				BCD460442C290144000AC848 /* Assets.xcassets */,
 				BCD460462C290144000AC848 /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */,
 			);
 			path = BookMyTimeUITests;
+			sourceTree = "<group>";
+		};
+		BCD4606A2C290224000AC848 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4606B2C290263000AC848 /* Models.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				BCD460432C290143000AC848 /* ContentView.swift in Sources */,
 				BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */,
+				BCD4606C2C290263000AC848 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
