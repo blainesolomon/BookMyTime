@@ -13,6 +13,7 @@ struct ProviderScheduleView: View {
     @Environment(DataManager.self) private var dataManager
 
     @State private var availability = [Availability]()
+    @State private var reservations = [Reservation]()
     @State private var showingAddAvailabilitySheet = false
 
     var body: some View {
@@ -33,6 +34,21 @@ struct ProviderScheduleView: View {
                         showingAddAvailabilitySheet = true
                     }
                 }
+
+                Section("Reservations") {
+                    ForEach(reservations) { reservation in
+                        VStack {
+                            Text(reservation.startDate.formatted(date: .long, time: .shortened))
+                            Text("Reservation with \(reservation.clientName)")
+                        }
+                    }
+
+                    if reservations.isEmpty {
+                        ContentUnavailableView {
+                            Label("No reservations", systemImage: "figure.tennis")
+                        }
+                    }
+                }
             }
         }
         .sheet(isPresented: $showingAddAvailabilitySheet) {
@@ -41,6 +57,11 @@ struct ProviderScheduleView: View {
         .navigationTitle(provider.name)
         .onChange(of: dataManager.availability, initial: true) {
             availability = dataManager.availability.filter {
+                $0.providerID == provider.id
+            }
+        }
+        .onChange(of: dataManager.reservations, initial: true) {
+            reservations = dataManager.reservations.filter {
                 $0.providerID == provider.id
             }
         }

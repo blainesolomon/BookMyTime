@@ -9,12 +9,16 @@ import SwiftUI
 
 struct ClientListView: View {
     @Environment(DataManager.self) private var dataManager
-
+    
     var body: some View {
         NavigationStack {
             List {
-                ForEach(dataManager.clients) {
-                    Text($0.name)
+                ForEach(dataManager.clients) { client in
+                    NavigationLink {
+                        ClientDetailView(client: client)
+                    } label: {
+                        Text(client.name)
+                    }
                 }
             }
             .navigationTitle("Clients")

@@ -14,7 +14,7 @@ extension Provider {
 }
 
 extension Client {
-    static let frodo = Client(id: .init(), name: "Frodo")
+    static let frodo = Client(id: .frodoID, name: "Frodo")
     static let sam = Client(id: .init(), name: "Sam")
     static let gandalf = Client(id: .init(), name: "Gandalf")
 }
@@ -40,23 +40,15 @@ extension Availability {
 extension Reservation {
     static let frodoDemoReservation = Reservation(id: .init(),
                                                   clientID: .frodoID,
-                                                  providerID: .alexID, 
+                                                  clientName: "Frodo",
+                                                  providerID: .alexID,
+                                                  providerName: "Alex",
                                                   isConfirmed: false,
                                                   creationDate: .now,
                                                   startDate: .makeDate(month: 7, day: 1, hour: 9))
 }
 
 
-extension Date {
-    static func makeDate(month: Int, day: Int, hour: Int) -> Date {
-        var components = DateComponents()
-        components.year = 2024
-        components.month = month
-        components.day = day
-        components.hour = hour
-        components.minute = 0
-        return Calendar.current.date(from: components)!
-    }
-}
+
 
 

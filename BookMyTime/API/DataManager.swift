@@ -18,6 +18,7 @@ import Foundation
         fetchClients()
         fetchProviders()
         fetchAvailability()
+        fetchReservations()
     }
 
     func fetchClients() {
@@ -32,12 +33,8 @@ import Foundation
         availability = [.alexJuly1Demo, .alexJuly2Demo].sorted()
     }
 
-    func fetchReservations(provider: Provider) -> [Reservation] {
-        return []
-    }
-
-    func fetchReservations(client: Client) -> [Reservation] {
-        return []
+    func fetchReservations() {
+        reservations = [.frodoDemoReservation]
     }
 
     func addReservation(reservation: Reservation) {
