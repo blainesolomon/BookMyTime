@@ -16,6 +16,8 @@
 		BCD4605E2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */; };
 		BCD4606C2C290263000AC848 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4606B2C290263000AC848 /* Models.swift */; };
 		BCD4606F2C29073C000AC848 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4606E2C29073C000AC848 /* MockAPI.swift */; };
+		BCD460712C2909BD000AC848 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460702C2909BD000AC848 /* MockData.swift */; };
+		BCD460732C290A11000AC848 /* ProviderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD460722C290A11000AC848 /* ProviderListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		BCD4605D2C290145000AC848 /* BookMyTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMyTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BCD4606B2C290263000AC848 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		BCD4606E2C29073C000AC848 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		BCD460702C2909BD000AC848 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		BCD460722C290A11000AC848 /* ProviderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			children = (
 				BCD460402C290143000AC848 /* BookMyTimeApp.swift */,
 				BCD460422C290143000AC848 /* ContentView.swift */,
+				BCD460722C290A11000AC848 /* ProviderListView.swift */,
 				BCD4606D2C29072E000AC848 /* API */,
 				BCD4606A2C290224000AC848 /* Models */,
 				BCD460442C290144000AC848 /* Assets.xcassets */,
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD4606E2C29073C000AC848 /* MockAPI.swift */,
+				BCD460702C2909BD000AC848 /* MockData.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 				BCD460432C290143000AC848 /* ContentView.swift in Sources */,
 				BCD460412C290143000AC848 /* BookMyTimeApp.swift in Sources */,
 				BCD4606C2C290263000AC848 /* Models.swift in Sources */,
+				BCD460712C2909BD000AC848 /* MockData.swift in Sources */,
+				BCD460732C290A11000AC848 /* ProviderListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
