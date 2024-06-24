@@ -19,7 +19,6 @@ struct ProviderListView: View {
                     } label: {
                         Text(provider.name)
                     }
-
                 }
             }
             .navigationTitle("Providers")

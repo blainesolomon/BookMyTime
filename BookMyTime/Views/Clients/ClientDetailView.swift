@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ClientDetailView: View {
-    var client: Client
+    let client: Client
 
     @Environment(DataManager.self) private var dataManager
 
     @State private var reservations = [Reservation]()
+    @State private var showingMakeReservation = false
 
     var body: some View {
         ZStack {
@@ -25,8 +26,14 @@ struct ClientDetailView: View {
                         }
                     }
 
+                    Button("Make Reservation") {
+                        showingMakeReservation = true
+                    }
                 }
             }
+        }
+        .sheet(isPresented: $showingMakeReservation) {
+            ClientMakeReservationView(client: client)
         }
         .navigationTitle(client.name)
         .onChange(of: dataManager.reservations, initial: true) {
