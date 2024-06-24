@@ -19,7 +19,9 @@ struct ClientMakeReservationView: View {
                 List {
                     ForEach(dataManager.providers) { provider in
                         NavigationLink {
-                            ClientBookTime(provider: provider, client: client)
+                            ClientBookTime(provider: provider, client: client) {
+                                dismiss()
+                            }
                         } label: {
                             Text(provider.name)
                         }

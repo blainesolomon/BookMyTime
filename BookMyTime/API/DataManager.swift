@@ -38,7 +38,7 @@ import Foundation
     }
 
     func addReservation(reservation: Reservation) {
-
+        reservations.append(reservation)
     }
 
     func confirmReservation(reservation: Reservation) {

@@ -10,9 +10,10 @@ import SwiftUI
 struct ClientBookTime: View {
     let provider: Provider
     let client: Client
+    let onFinishBooking: (() -> Void)
 
     @Environment(DataManager.self) private var dataManager
-    @Environment(\.dismiss) private var dismiss
+    @Environment(\.presentationMode) var presentationMode
     @State private var timeSlots = [TimeSlot]()
 
     var body: some View {
@@ -27,7 +28,7 @@ struct ClientBookTime: View {
                 ForEach(timeSlots) { slot in
                     Button {
                         bookTimeSlot(timeSlot: slot)
-                        dismiss()
+                        onFinishBooking()
                     } label: {
                         Text(slot.startTime.formatted(date: .abbreviated, time: .shortened))
                     }
@@ -62,7 +63,9 @@ struct ClientBookTime: View {
 
 #Preview {
     NavigationStack {
-        ClientBookTime(provider: .alex, client: .frodo)
+        ClientBookTime(provider: .alex, client: .frodo) {
+            
+        }
     }
     .environment(DataManager())
 }
