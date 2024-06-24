@@ -23,7 +23,13 @@ struct ProviderScheduleView: View {
                         Text("\(availability.startDate.formatted(date: .long, time: .shortened)) - \(availability.endDate.formatted(date: .omitted, time: .shortened))")
                     }
 
-                    Button("Add More") {
+                    if availability.isEmpty {
+                        ContentUnavailableView {
+                            Label("No current availability", systemImage: "person.badge.clock.fill")
+                        }
+                    }
+
+                    Button("Add More Availability") {
                         showingAddAvailabilitySheet = true
                     }
                 }
@@ -41,9 +47,16 @@ struct ProviderScheduleView: View {
     }
 }
 
-#Preview {
+#Preview("Alex") {
     NavigationStack {
         ProviderScheduleView(provider: .alex)
+            .environment(DataManager())
+    }
+}
+
+#Preview("Empty") {
+    NavigationStack {
+        ProviderScheduleView(provider: .milo)
             .environment(DataManager())
     }
 }

@@ -13,8 +13,13 @@ struct ProviderListView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(dataManager.providers) {
-                    Text($0.name)
+                ForEach(dataManager.providers) { provider in
+                    NavigationLink {
+                        ProviderScheduleView(provider: provider)
+                    } label: {
+                        Text(provider.name)
+                    }
+
                 }
             }
             .navigationTitle("Providers")
