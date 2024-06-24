@@ -5,9 +5,9 @@ This project includes 3 demo providers and 3 demo clients.
 
 ## Tasks
 - ✅ Allows providers to submit times they’d like to work on the schedule
-- Allows clients to list available slots
-- Allows clients to reserve an available slot
-- Allows clients to confirm their reservation
+- ✅ Allows clients to list available slots
+- ✅ Allows clients to reserve an available slot
+- ✅ Allows clients to confirm their reservation
 
 
 ## Open
@@ -30,5 +30,6 @@ Open with Xcode and explore with Previews or Simulator.
 ## Limitations
 - Provider time slots can be added, but not changed
 - Does not support preventing duplicate time slots
+- Does not enforce reservations 24 hours in advance
 - Does not support preventing double booking reservations
 - 15 min slots are hardcoded and generated in app
